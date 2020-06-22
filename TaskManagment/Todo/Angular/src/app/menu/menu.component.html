@@ -1,0 +1,27 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div>
+            <a href="https://www.google.com" class="navbar-brand">google</a>
+        </div>
+        
+        <ul class="navbar-nav ">
+            <li><a routerLink="/welcome/Rao" class="nav-link" *ngIf='this.harcodedAuthenticateService.isUserLoggedIn()'>Home</a></li>
+            <li><a routerLink="/todos" class="nav-link" *ngIf='this.harcodedAuthenticateService.isUserLoggedIn()'>Todos</a></li>
+        </ul>
+
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+            <li><a routerLink="/login" class="nav-link" *ngIf='!this.harcodedAuthenticateService.isUserLoggedIn()'>Login</a></li>
+            <a routerLink="/logout" class="nav-link" *ngIf='this.harcodedAuthenticateService.isUserLoggedIn()'>Logout</a>
+        </ul>
+
+        <!-- <ul class="navbar-nav ">
+            <li><a routerLink="/welcome/Rao" class="nav-link" *ngIf='isUserLoggedIn'>Home</a></li>
+            <li><a routerLink="/todos" class="nav-link" *ngIf='isUserLoggedIn'>Todos</a></li>
+        </ul>
+
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+            <li><a routerLink="/login" class="nav-link" *ngIf='!isUserLoggedIn'>Login</a></li>
+            <a routerLink="/logout" class="nav-link" *ngIf='isUserLoggedIn'>Logout</a>
+        </ul> -->
+    </nav>
+</header>
