@@ -1,0 +1,40 @@
+.account-summary-card {
+    max-height: 80%;
+    max-width: 200px;
+    justify-content: center;
+    padding: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .mat-card-header-image {
+    background-image: url('/assets/Prahlad.png');
+    background-size: cover;
+  }
+
+.mat-stepper-vertical {
+    margin-top: 8px;
+  }
+  
+  .mat-form-field {
+    margin-top: 16px;
+  }
+
+  .mat-card-action .flex-spacer{
+    text-align: right;
+    width: 100%;
+}
+
+  .example-small-box, .example-large-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+    border-radius: auto;
+  }
+  
+  .example-small-box {
+    height: 100%;
+    width: 100%;
+  }

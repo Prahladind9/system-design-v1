@@ -1,0 +1,69 @@
+<div>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span>Rao's Bank</span>
+      
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-toolbar-row>
+    <button
+      mat-icon-button
+      routerLink="/accountSummary"
+      [routerLinkActive]="['is-active']"
+      aria-label="Home Icon"
+    >
+      <mat-icon>home</mat-icon>
+    </button>
+
+    <button mat-button routerLink="/account" [routerLinkActive]="['is-active']">
+      Account
+    </button>
+    <button
+      mat-button
+      routerLink="/transfer"
+      [routerLinkActive]="['is-active']"
+    >
+      Transfer
+    </button>
+
+    <button mat-button routerLink="/profile" [routerLinkActive]="['is-active']">
+        Profile
+      </button>
+
+
+    <span class="spacer"></span>
+ 
+      <!-- <mat-icon>favorite</mat-icon> -->
+      <mat-icon>share</mat-icon>
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item color="primary" routerLink="/profile" >
+            <mat-icon>person</mat-icon>
+            <span>Profile</span>
+          </button>
+          
+          <button mat-menu-item color="primary" (click)="handleLogOut()">
+            <mat-icon>login</mat-icon>
+            <span>Logout</span>
+          </button>
+          <button mat-menu-item disabled>
+            <mat-icon>toggle_off</mat-icon>
+            <span>Disable</span>
+          </button>
+        </mat-menu>
+      </button>
+
+    <!-- <button mat-stroked-button color="assert" (click)="handleLogOut()">
+      Logout
+    </button> -->
+
+    <!-- <button mat-button [matMenuTriggerFor]="settingMenu">Setting</button>
+        <mat-menu #settingMenu="matMenu" xPosition="before" [routerLinkActive]="['is-active']">
+            <button mat-menu-item  routerLink="/profile">Profile</button>
+            <button color="warn" mat-menu-item  (click)="handleLogOut()">Logout</button>
+        </mat-menu> -->
+
+    <!-- <button mat-flat-button color="warn" (click)="handleLogOut()">Logout</button> -->
+  </mat-toolbar-row>
+</div>

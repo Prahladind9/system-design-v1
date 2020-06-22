@@ -1,0 +1,68 @@
+<app-rao-toolbar></app-rao-toolbar>
+<mat-tab-group #tabGroup>
+  <mat-tab label="Summary">
+    <div>
+      <mat-card class="account-summary-card">
+        <mat-card-header>
+          <div mat-card-avatar class="mat-card-header-image"></div>
+          <mat-card-title>Primary</mat-card-title>
+          <mat-card-subtitle>Account Balance</mat-card-subtitle>
+        </mat-card-header>
+        <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+        <mat-card-content>
+          <strong>$ {{ primaryAccountBalance }}</strong>
+        </mat-card-content>
+        <mat-card-actions>
+          <div class="flex-spacer">
+          <button 
+            mat-icon-button
+            mat-stroked-button
+            color="primary"
+            matTooltip="Primary Transacation Details"
+            (click)="tabGroup.selectedIndex = 1"
+          >
+            <mat-icon >read_more</mat-icon>
+          </button>
+        </div>
+          <!-- <button mat-button (click)="tabGroup.selectedIndex = 1">Click For Details</button> -->
+        </mat-card-actions>
+      </mat-card>
+
+      <mat-card class="account-summary-card">
+        <mat-card-header>
+          <div mat-card-avatar class="mat-card-header-image"></div>
+          <mat-card-title>Savings</mat-card-title>
+          <mat-card-subtitle>Account Balance</mat-card-subtitle>
+        </mat-card-header>
+        <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+        <mat-card-content>
+          <strong>$ {{ savingsAccountBalance }}</strong>
+        </mat-card-content>
+        <mat-card-actions>
+          <div class="flex-spacer"></div>
+          <button
+            mat-icon-button
+            mat-stroked-button
+            color="primary"
+            matTooltip="Savings Transacation Details"
+            (click)="tabGroup.selectedIndex = 2"
+          >
+            <mat-icon>read_more</mat-icon>
+          </button>
+          <!-- <button mat-button (click)="tabGroup.selectedIndex = 2">Click For Details</button> -->
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </mat-tab>
+  <mat-tab label="Primary Details">
+    <div>
+      <app-primary-transaction></app-primary-transaction>
+    </div>
+  </mat-tab>
+
+  <mat-tab label="Savings Details">
+    <div>
+      <app-savings-transaction></app-savings-transaction>
+    </div>
+  </mat-tab>
+</mat-tab-group>

@@ -1,0 +1,56 @@
+<app-rao-toolbar></app-rao-toolbar>
+
+<mat-tab-group #accountTabGroup (selectedTabChange)="log()">
+
+    <mat-tab label="betweenAccounts">
+        <div>
+            <mat-vertical-stepper linear #betweenAccountsStepper>
+                <mat-step [stepControl]="firstFormGroup" errorMessage="Name is required.">
+
+                    <form [formGroup]="firstFormGroup">
+                        <ng-template matStepLabel>Transfer From</ng-template>
+                        <mat-form-field>
+                            <mat-label>Select an option</mat-label>
+                            <mat-select [(value)]="selected" formControlName="transferFrom">
+                                <mat-option>None</mat-option>
+                                <mat-option value="Primary">Primary</mat-option>
+                                <mat-option value="Savings">Savings</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <div>
+                            
+                            <button mat-button matStepperNext  (click)="transferToSet()">Next</button>
+                        </div>
+                    </form>
+
+                </mat-step>
+                <mat-step [stepControl]="firstFormGroup" errorMessage="Amount is required.">
+                    <form [formGroup]="firstFormGroup">
+                        <ng-template matStepLabel>Enter the Amount in $</ng-template>
+                        <mat-form-field>
+                            <mat-label>Amount</mat-label>
+                            <input matInput formControlName="transactionAmount" placeholder="1000">
+                        </mat-form-field>
+                        <div>
+                            <button mat-button matStepperPrevious>Back</button>
+                            <button mat-button matStepperNext (click)="betweenAccounts()">Next</button>
+                        </div>
+                    </form>
+                </mat-step>
+                <mat-step>
+                    <ng-template matStepLabel>Done</ng-template>
+                    <p>You have successfully completed your transaction.
+                        Click below for Summary details
+                    </p>
+                    <div>
+                        <button mat-button (click)="betweenAccountsStepper.reset()"
+                            routerLink="/accountSummary">Summary</button>
+                        <button mat-button (click)="betweenAccountsStepper.reset()">Another Transfer</button>
+                    </div>
+                </mat-step>
+            </mat-vertical-stepper>
+        </div>
+
+    </mat-tab>
+
+</mat-tab-group>

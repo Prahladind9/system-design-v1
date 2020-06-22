@@ -1,0 +1,83 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span>Rao's Bank</span>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+        ******************************** SignUp Screen ********************************
+    </mat-toolbar-row>
+</mat-toolbar>
+<div>
+
+    <form #signUpForm="ngForm" [formGroup]="signUpFormGroup" (ngSubmit)="signUpForm.valid && saveUser()">
+
+        <div>
+            <!-- Appearance: Outline -->
+            <mat-form-field appearance="outline">
+                <mat-label>User Name</mat-label>
+                <input type="text" name="userName" formControlName="userName" matInput
+                    placeholder="Please enter the username" />
+                <mat-hint>Enter user name</mat-hint>
+            </mat-form-field>
+        </div>
+
+        <div>
+            <!-- Appearance: Outline -->
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input type="password" name="password" formControlName="password" matInput placeholder="Password" />
+                <mat-hint>Password</mat-hint>
+            </mat-form-field>
+        </div>
+
+        <div>
+            <!-- Appearance: Outline -->
+            <mat-form-field appearance="outline">
+                <mat-label>First Name</mat-label>
+                <input type="text" name="firstName" formControlName="firstName" matInput
+                    placeholder="FirstName" />
+                <mat-hint>FirstName of the User</mat-hint>
+            </mat-form-field>
+        </div>
+
+        <div>
+            <!-- Appearance: Outline -->
+            <mat-form-field appearance="outline">
+                <mat-label>Last Name</mat-label>
+                <input type="text" name="lastName" formControlName="lastName" matInput
+                    placeholder="Lastname" />
+                <mat-hint>LastName of the User</mat-hint>
+            </mat-form-field>
+        </div>
+
+        <div>
+            <!-- Appearance: Outline -->
+            <mat-form-field appearance="outline">
+                <mat-label>PhoneNumber</mat-label>
+                <input type="text" name="phone" formControlName="phone" matInput
+                    placeholder="PhoneNumber" />
+                <mat-hint>PhoneNumber of the User</mat-hint>
+            </mat-form-field>
+        </div>
+
+
+        <div>
+            <!-- Appearance: Outline -->
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input type="email" name="email" formControlName="email" matInput
+                    placeholder="Email" />
+                <mat-hint>Email of the User</mat-hint>
+            </mat-form-field>
+        </div>
+
+        <div class="pull-left">
+            <button mat-raised-button color="primary" type="submit" [disabled]="!signUpFormGroup.valid"> SignUp </button>
+            <button mat-raised-button (click)="clearSignUp()" > Clear </button>
+            <button mat-raised-button color="primary" routerLink="/login" > Login </button>
+        </div>
+
+        <!-- (click)="clearSignUp()" -->
+
+    </form>
+
+</div>

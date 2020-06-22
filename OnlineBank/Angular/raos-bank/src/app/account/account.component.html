@@ -1,0 +1,141 @@
+<app-rao-toolbar></app-rao-toolbar>
+
+<mat-tab-group #accountTabGroup (selectedTabChange)="reset()">
+  <mat-tab label="Deposit">
+    <div>
+      <mat-vertical-stepper linear #depositStepper>
+        <mat-step
+          [stepControl]="accountFormGroup"
+          errorMessage="Name is required."
+        >
+          <form [formGroup]="accountFormGroup">
+            <ng-template matStepLabel>Choose Account Type</ng-template>
+            <mat-form-field>
+              <mat-label>Select an option</mat-label>
+              <mat-select [(value)]="selected" formControlName="accountType">
+                <mat-option>None</mat-option>
+                <mat-option value="Primary">Primary</mat-option>
+                <mat-option value="Savings">Savings</mat-option>
+              </mat-select>
+            </mat-form-field>
+            <div>
+              <button mat-button matStepperNext matTooltip="Continue">
+                <mat-icon>arrow_forward</mat-icon>
+              </button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step
+          [stepControl]="accountFormGroup"
+          errorMessage="Amount is required."
+        >
+          <form [formGroup]="accountFormGroup">
+            <ng-template matStepLabel>Enter the Amount in $</ng-template>
+            <mat-form-field>
+              <mat-label>Amount</mat-label>
+              <input
+                matInput
+                formControlName="transactionAmount"
+                placeholder="1000"
+              />
+            </mat-form-field>
+            <div>
+              <button mat-button matStepperNext matTooltip="Back">
+                <mat-icon>arrow_back</mat-icon>
+              </button>
+              <button mat-button matStepperNext matTooltip="Next" (click)="deposit()">
+                <mat-icon>arrow_forward</mat-icon>
+              </button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step>
+          <ng-template matStepLabel>Done</ng-template>
+          <p>
+            You have successfully completed your transaction. Click below for
+            Summary details
+          </p>
+          <div>
+            <button
+              mat-button
+              (click)="depositStepper.reset()"
+              routerLink="/accountSummary"
+            >
+              Summary
+            </button>
+            <button mat-button (click)="depositStepper.reset(); reset()">
+              Another Deposit
+            </button>
+          </div>
+        </mat-step>
+      </mat-vertical-stepper>
+    </div>
+  </mat-tab>
+
+  <mat-tab label="Withdraw">
+    <div>
+      <mat-vertical-stepper linear #withdrawStepper>
+        <mat-step
+          [stepControl]="accountFormGroup"
+          errorMessage="Name is required."
+        >
+          <form [formGroup]="accountFormGroup">
+            <ng-template matStepLabel>Choose Account Type</ng-template>
+            <mat-form-field>
+              <mat-label>Select an option</mat-label>
+              <mat-select [(value)]="selected" formControlName="accountType">
+                <mat-option>None</mat-option>
+                <mat-option value="Primary">Primary</mat-option>
+                <mat-option value="Savings">Savings</mat-option>
+              </mat-select>
+            </mat-form-field>
+            <div>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step
+          [stepControl]="accountFormGroup"
+          errorMessage="Amount is required."
+        >
+          <form [formGroup]="accountFormGroup">
+            <ng-template matStepLabel>Enter the Amount in $</ng-template>
+            <mat-form-field>
+              <mat-label>Amount</mat-label>
+              <input
+                matInput
+                formControlName="transactionAmount"
+                placeholder="1000"
+              />
+            </mat-form-field>
+            <div>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext (click)="withdraw()">
+                Next
+              </button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step>
+          <ng-template matStepLabel>Done</ng-template>
+          <p>
+            You have successfully completed your transaction. Click below for
+            Summary details
+          </p>
+          <div>
+            <button
+              mat-button
+              (click)="withdrawStepper.reset()"
+              routerLink="/accountSummary"
+            >
+              Summary
+            </button>
+            <button mat-button (click)="withdrawStepper.reset(); reset()">
+              Another Withdraw
+            </button>
+          </div>
+        </mat-step>
+      </mat-vertical-stepper>
+    </div>
+  </mat-tab>
+</mat-tab-group>
