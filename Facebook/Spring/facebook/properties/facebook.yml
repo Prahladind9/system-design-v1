@@ -1,0 +1,11 @@
+facebook:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/casestudy?searchpath=facebook
+        username: facebook
+        password: facebook
+        driver: org.postgresql.Driver
+    threadPoolTaskExecutor:
+        maxPoolSize:   5
+        corePoolSize:  3
+        queueCapacity: 10
+    applicationName: facebook
