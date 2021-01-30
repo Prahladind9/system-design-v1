@@ -5,7 +5,7 @@ spring:
     livereload:
       enabled: true
   jmx:
-    default-domain: pdms
+    default-domain: facebook
   main:
     allow-bean-definition-overriding: true
   jackson:
@@ -21,7 +21,7 @@ spring:
     hibernate:
       ddl-auto: update
   application:
-    name: pdms
+    name: facebook
   banner:
     location: classpath:banner.txt
 PROPERTY_PATH: ${user.dir}/properties/facebook.yml
