@@ -12,7 +12,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @ToString
-@SequenceGenerator(name ="pageId_Seq")
+@SequenceGenerator(name ="recommendationId_Seq")
 public class Recommendation {
 
     @Id

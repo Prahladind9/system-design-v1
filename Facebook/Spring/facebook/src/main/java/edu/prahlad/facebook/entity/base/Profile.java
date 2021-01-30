@@ -25,7 +25,7 @@ public class Profile {
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JsonIgnore
-    @JoinColumn(name = "work_id")
+    @JoinColumn(name = "workId")
     private List<Work> workExperiences;
 //    private List<Education> educations;
 //    private List<Place> places;

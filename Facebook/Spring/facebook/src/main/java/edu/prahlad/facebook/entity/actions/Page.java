@@ -25,6 +25,6 @@ public class Page {
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JsonIgnore
-    @JoinColumn(name = "recommendation_id")
+    @JoinColumn(name = "recommendationId")
     private List<Recommendation> recommendations;
 }

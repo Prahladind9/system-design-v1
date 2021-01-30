@@ -33,7 +33,7 @@ public class Member extends Person{
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JsonIgnore
-    @JoinColumn(name = "connection_invitation_id")
-    private Set<ConnectionInvitation> connectionInvitations = new HashSet<>();
+    @JoinColumn(name = "connectionInvitationId")
+    private Set<ConnectionInvitation> connectionInvitations;
 
 }

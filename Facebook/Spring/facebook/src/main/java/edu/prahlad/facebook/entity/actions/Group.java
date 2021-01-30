@@ -28,6 +28,6 @@ public class Group {
     //https://thorben-janssen.com/best-practices-many-one-one-many-associations-mappings/
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JsonIgnore
-    @JoinColumn(name = "member_id")
+    @JoinColumn(name = "memberId")
     private List<Member> members;
 }

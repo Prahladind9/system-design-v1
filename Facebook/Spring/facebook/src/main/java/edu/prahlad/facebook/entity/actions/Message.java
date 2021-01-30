@@ -24,7 +24,7 @@ public class Message {
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JsonIgnore
-    @JoinColumn(name = "member_id")
+    @JoinColumn(name = "memberId")
     private List<Member> sentTo;
 
     //public boolean addMember(Member member)
