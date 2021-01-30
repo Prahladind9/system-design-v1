@@ -1,6 +1,5 @@
 package edu.prahlad.facebook.entity.actions;
 
-import edu.prahlad.facebook.entity.base.Member;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;

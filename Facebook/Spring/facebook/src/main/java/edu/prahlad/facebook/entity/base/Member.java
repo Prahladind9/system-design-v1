@@ -1,15 +1,12 @@
 package edu.prahlad.facebook.entity.base;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import edu.prahlad.facebook.entity.actions.Recommendation;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 @Entity

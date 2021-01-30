@@ -19,5 +19,5 @@ public class Account {
     private Long id;
     private String password;
     private AccountStatus status;
-    
+
 }
