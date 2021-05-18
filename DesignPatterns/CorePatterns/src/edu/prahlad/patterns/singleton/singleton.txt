@@ -1,0 +1,19 @@
+Steps to create a singleton class
+    Declare the constructor of the class as private
+    Declare a static method
+    Declare a static member of the same class type in the class
+
+Initialization
+    Lazy - only when required instance is created (preferable)
+    Eager - when we are sure that singleton class will be used at least once
+
+Thread Safety
+    Adding synchronized & class level lock for the first time instance creation
+    marking the instance as volatile
+
+Serialization
+    When file is saved as external source & deserialized-read again the instance will be different
+    This is handled via implementing Serializable & adding readResolve() method
+
+Cloneable
+    Singleton Objects shouldn't be cloned > can be handled by overriding clone method
