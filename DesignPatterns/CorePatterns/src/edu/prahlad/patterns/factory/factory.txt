@@ -1,0 +1,15 @@
+Factory
+Hides the object creation process
+Ex. Driver > Oracle, MySql, Plsql
+    DriverManager.getConnection(String conString)
+    here DriverManager is the Factory
+    ToyFactory, CarFactory, ChocolateFactory
+
+Steps
+    Create Interface - which gathering all the steps required for class execution
+    Implement interface w.r.t use-cases
+    Create Factory class which has Interface - uses composition to resolve the respective implementation
+    MainClass calls required implementation
+
+Drawback
+    For new use-case we have to modify Factory class

@@ -22,10 +22,4 @@ JEE Pattern Catalog
     Business Layer: Business Delegate, Transfer Object, Session Facade, Service Locator ...
     Data Access Layer: Data Access Object ...
 
-Singletion 
-    Objection Creation - One and Only One Class Instance
-    Ex: ProperyReader reads data from PropertyFile once & multiple classes use this info, 
-        Logger class to handle multiple logging for the whole application, 
-        DataSource class handling connection pool
-
         

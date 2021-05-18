@@ -1,3 +1,9 @@
+Singleton
+    Objection Creation - One and Only One Class Instance
+    Ex: PropertyReader reads data from PropertyFile once & multiple classes use this info,
+        Logger class to handle multiple logging for the whole application,
+        DataSource class handling connection pool
+
 Steps to create a singleton class
     Declare the constructor of the class as private
     Declare a static method
