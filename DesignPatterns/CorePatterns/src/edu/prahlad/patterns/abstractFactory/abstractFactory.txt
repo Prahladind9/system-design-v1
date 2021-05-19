@@ -1,0 +1,15 @@
+AbstractFactory
+Hides Factory of Factories
+Ex: JAXP - DocumentBuilderFactory > DocumentBuilder > Document
+    DAO(DataAccessObjects) Factory
+
+Steps
+    Similar to Factory
+        Create Interface - which gathering all the steps required for class execution
+        Implement interface w.r.t use-cases
+        Create Factory class which has Interface
+
+    Create & List Down all the factory
+    Create an AbstractFactory - that handles the creation of respective factory
+    Maker/Producer class that uses the AbstractFactory
+    Client/Caller uses Maker to get factory & create respective implemented class

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>edu.prahlad.patterns.abstractFactory.dao.DBEmpDao</OriginalElement>
+  <nodes>
+    <node x="407.0" y="155.0">edu.prahlad.patterns.abstractFactory.dao.DaoFactoryProducer</node>
+    <node x="501.0" y="80.0">edu.prahlad.patterns.abstractFactory.dao.DBEmpDao</node>
+    <node x="278.75" y="0.0">edu.prahlad.patterns.abstractFactory.dao.Dao</node>
+    <node x="185.0" y="235.0">edu.prahlad.patterns.abstractFactory.dao.XMLDaoFactory</node>
+    <node x="158.0" y="80.0">edu.prahlad.patterns.abstractFactory.dao.XMLEmpDao</node>
+    <node x="331.0" y="80.0">edu.prahlad.patterns.abstractFactory.dao.XMLDepDao</node>
+    <node x="73.5" y="155.0">edu.prahlad.patterns.abstractFactory.dao.DaoAbstractFactory</node>
+    <node x="0.0" y="235.0">edu.prahlad.patterns.abstractFactory.dao.DBDaoFactory</node>
+    <node x="0.0" y="80.0">edu.prahlad.patterns.abstractFactory.dao.DBDepDao</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="edu.prahlad.patterns.abstractFactory.dao.XMLEmpDao" target="edu.prahlad.patterns.abstractFactory.dao.Dao" relationship="REALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="234.5" y="55.0" />
+      <point x="320.25" y="55.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="edu.prahlad.patterns.abstractFactory.dao.DBEmpDao" target="edu.prahlad.patterns.abstractFactory.dao.Dao" relationship="REALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="571.5" y="55.0" />
+      <point x="320.25" y="55.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="edu.prahlad.patterns.abstractFactory.dao.DBDaoFactory" target="edu.prahlad.patterns.abstractFactory.dao.DaoAbstractFactory" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="82.5" y="210.0" />
+      <point x="178.0" y="210.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="edu.prahlad.patterns.abstractFactory.dao.XMLDepDao" target="edu.prahlad.patterns.abstractFactory.dao.Dao" relationship="REALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="406.0" y="55.0" />
+      <point x="320.25" y="55.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="edu.prahlad.patterns.abstractFactory.dao.DBDepDao" target="edu.prahlad.patterns.abstractFactory.dao.Dao" relationship="REALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="69.0" y="55.0" />
+      <point x="320.25" y="55.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="edu.prahlad.patterns.abstractFactory.dao.XMLDaoFactory" target="edu.prahlad.patterns.abstractFactory.dao.DaoAbstractFactory" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="273.5" y="210.0" />
+      <point x="178.0" y="210.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="321.0" y="132.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
