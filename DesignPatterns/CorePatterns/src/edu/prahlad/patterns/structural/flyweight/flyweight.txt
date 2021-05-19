@@ -1,0 +1,11 @@
+Flyweight Pattern
+    Instead of creating a large number of similar objects.
+    We can reduce the number of objects that are created by reusing the objects & saving memory
+    Memory is a huge concern especially when it comes to mobile applications with limited memory.
+
+Ex: Shape - draw() > Circle - r & Rectangle - l,b > draw() method
+
+Steps:
+    Separate the Extrinsic State
+    Pass them as parameters - to the invoking method
+    Create a factory class - client should this class
