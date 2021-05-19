@@ -1,0 +1,11 @@
+Adapter Pattern
+    When 2 Programs communicate with each other, one may have to adapt as per other requirements
+Ex: WeatherFinder > find(city) - WeatherFinderImp
+    WeatherUI - sends Zipcode
+    WeatherAdapter > findTemperature(zipCode) > getCity & Call  WeatherFinder.findCity
+
+Steps
+    2Parties
+    1 - Interface & its Implementation with one requirement, lets say based on input
+    2 - Request's same result as 1, but has different input
+    Then > Adapter Class acts as adapter - converts 2 input to as per 1 input & fetches the result
