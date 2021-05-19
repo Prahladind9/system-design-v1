@@ -1,0 +1,9 @@
+Template Method Pattern
+    Provides template/base method: Parent (baseMethod) > Child1, Child2 to implement via inheritance
+Ex: DataRenderer > render() - readData() + processData()
+    XMLDataRenderer & CSVDataRenderer > will override readData() & processData()
+
+Steps
+    Create Abstract Class with one implemented/base method - calling other abstract methods
+    Implement Abstract class & override the abstract methods
+    Client/Caller Class to initialize & call the base method
