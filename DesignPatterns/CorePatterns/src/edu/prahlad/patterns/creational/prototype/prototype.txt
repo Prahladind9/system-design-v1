@@ -1,0 +1,9 @@
+PrototypePattern > uses an existing object to create new objects
+Cloning
+    1) Shallow copy > Plain Java - Clone method
+        The cloned object - inner class objects will have same reference/address
+    2) Deep Copy > Overriding Java - Clone method
+    3) Deep Copy > using copy constructor
+
+Pro: We can create as many instance we want with the same state
+Con: Inner classes, can make it complex, with a chance for circular reference error
