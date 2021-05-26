@@ -1,0 +1,6 @@
+Proxy is something which comes in place of actual object
+Remote Proxy
+Virtual Proxy
+Security Proxy
+
+Reflection API is used to create proxy in Spring & Hibernate on the fly
