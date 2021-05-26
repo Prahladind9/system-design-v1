@@ -1,0 +1,5 @@
+Client > Invoker > Command > Receiver
+                       /\
+                  ConcreteCommand
+
+Example
