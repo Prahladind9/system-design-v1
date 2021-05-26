@@ -1,0 +1,3 @@
+Decorator Pattern
+    Add more functionality at runtime,
+    does this by wrapping the object with more behaviour
