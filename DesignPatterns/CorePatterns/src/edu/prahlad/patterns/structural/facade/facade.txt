@@ -1,0 +1,3 @@
+Facade simplifies the complexity in the system to client, by becoming a layer in between
+
+Uses: Reduces the API-Network call, used in REST implementation
