@@ -1,0 +1,7 @@
+CodeWithMosh Course
+
+Basics
+    Programming to an interface
+    Interface: A contract that specifies the capabilities that a class should provide
+    Inheritance, Polymorphism, encapsulation
+    Abstraction:Reduce complexity by hiding unnecessary details
