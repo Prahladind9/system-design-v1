@@ -6,6 +6,11 @@ Basics
     Inheritance, Polymorphism, encapsulation
     Abstraction:Reduce complexity by hiding unnecessary details
     Single Responsibility Principle
+    Open Close Principle - open for extension, closed for modification
+    Simplicity is the ultimate sophistication - keep things simple & pragmatic
+
+    Don't Abuse Design Patterns - Understand the requirement & Context
 
 Patterns
-1) Momento - implement undo mechanism
+1) Momento Pattern - implement undo mechanism
+2) State Pattern
