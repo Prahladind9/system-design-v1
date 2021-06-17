@@ -16,3 +16,4 @@ Patterns
 2) State Pattern
 3) Iterator Pattern
 4) Strategy Pattern
+5) Template Pattern
