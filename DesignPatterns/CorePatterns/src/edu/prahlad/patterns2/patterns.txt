@@ -17,3 +17,7 @@ Patterns
 3) Iterator Pattern
 4) Strategy Pattern
 5) Template Pattern
+6) Command Pattern
+7) Observer Pattern
+8) Mediator Pattern
+9) Chain Of Responsibility
