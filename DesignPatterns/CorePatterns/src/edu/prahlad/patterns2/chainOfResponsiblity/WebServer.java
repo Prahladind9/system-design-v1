@@ -1,11 +1,13 @@
 package edu.prahlad.patterns2.chainOfResponsiblity;
 
 public class WebServer {
-    public void handle(HttpRequest request){
-        //Authentication
-        var autheicator = new Authenticator();
-        //Logging
-        //Compression
+    private Handler handler;
 
+    public WebServer(Handler handler) {
+        this.handler = handler;
+    }
+
+    public void handle(HttpRequest request){
+        handler.handle(request);
     }
 }

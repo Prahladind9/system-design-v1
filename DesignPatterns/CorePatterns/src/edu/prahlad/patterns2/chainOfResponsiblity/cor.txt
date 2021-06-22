@@ -1,0 +1,11 @@
+1) If the method sequence is fixed, then any future change
+    like disabling one of methods, we need to modify the class
+        /Authentication
+        //Logging
+        //Compression
+    Here comes ChainOfResponsibility to our rescue
+
+2) An Abstract Handler class with one handle method of Handle return type
+    Chains the actions needs to done
+
+3) Open to extension, closed to modification
