@@ -1,0 +1,8 @@
+package edu.prahlad.patterns2.structural.adapter;
+
+public class VividFilter implements Filter{
+    @Override
+    public void apply(Image image) {
+        System.out.println("Applying Vivid Filter");
+    }
+}
