@@ -30,3 +30,4 @@ Structural Patterns
     4) Decorator Pattern
     5) Flyweight Pattern
     6) Bridge Pattern
+    7) Proxy Pattern
