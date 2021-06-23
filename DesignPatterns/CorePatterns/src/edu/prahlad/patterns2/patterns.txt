@@ -11,7 +11,7 @@ Basics
 
     Don't Abuse Design Patterns - Understand the requirement & Context
 
-Patterns
+Behavioural Patterns
 1) Momento Pattern - implement undo mechanism
 2) State Pattern
 3) Iterator Pattern
@@ -21,3 +21,4 @@ Patterns
 7) Observer Pattern
 8) Mediator Pattern
 9) Chain Of Responsibility
+10) Visitor

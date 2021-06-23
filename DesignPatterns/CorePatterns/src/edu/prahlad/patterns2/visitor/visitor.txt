@@ -1,0 +1,2 @@
+Allows to add new operations to an object structure
+without modifying it.
