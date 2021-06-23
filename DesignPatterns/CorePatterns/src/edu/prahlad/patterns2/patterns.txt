@@ -25,3 +25,5 @@ Behavioural Patterns
 
 Structural Patterns
     1) Composite Pattern
+    2) Adapter Pattern
+    3) Facade Pattern
