@@ -3,3 +3,12 @@ Design Principle
     separate them from what stays the same.
 2) Program to an interface, not an implementation
     Delegating behaviour during runtime.
+3) Favor composition over inheritance
+    HAS-A can be better than IS-A
+
+Behavioural
+
+1) StrategyPattern
+    defines a family of algorithms, encapsulates each one,
+    and makes them interchangeable.
+    Strategy lets the algorithm vary independently from clients that use it.

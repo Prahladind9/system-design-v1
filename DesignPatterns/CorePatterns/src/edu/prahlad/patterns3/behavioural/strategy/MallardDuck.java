@@ -1,7 +1,7 @@
-package edu.prahlad.patterns3.intro;
+package edu.prahlad.patterns3.behavioural.strategy;
 
-import edu.prahlad.patterns3.intro.fly.FlyWithWings;
-import edu.prahlad.patterns3.intro.quack.Quack;
+import edu.prahlad.patterns3.behavioural.strategy.fly.FlyWithWings;
+import edu.prahlad.patterns3.behavioural.strategy.quack.Quack;
 
 public class MallardDuck extends Duck{
     public MallardDuck() {

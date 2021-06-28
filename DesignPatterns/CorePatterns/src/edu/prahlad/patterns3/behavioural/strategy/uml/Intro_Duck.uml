@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>edu.prahlad.patterns3.intro.Duck</OriginalElement>
+  <nodes>
+    <node x="700.15625" y="180.5">edu.prahlad.patterns3.intro.quack.MuteQuack</node>
+    <node x="553.15625" y="180.5">edu.prahlad.patterns3.intro.quack.Quack</node>
+    <node x="1009.15625" y="180.5">edu.prahlad.patterns3.intro.fly.FlyNoWay</node>
+    <node x="0.0" y="351.0">edu.prahlad.patterns3.intro.DecoyDuck</node>
+    <node x="242.75000000000006" y="0.0">edu.prahlad.patterns3.intro.quack.QuackBehavior</node>
+    <node x="331.00000000000006" y="351.0">edu.prahlad.patterns3.intro.RedheadDuck</node>
+    <node x="215.51041666666674" y="125.0">edu.prahlad.patterns3.intro.Duck</node>
+    <node x="1376.15625" y="180.5">edu.prahlad.patterns3.intro.fly.FlyWithWings</node>
+    <node x="1159.15625" y="180.5">edu.prahlad.patterns3.intro.fly.FlyRocketPowered</node>
+    <node x="862.15625" y="180.5">edu.prahlad.patterns3.intro.quack.Squeak</node>
+    <node x="1075.4166666666667" y="351.0">edu.prahlad.patterns3.intro.MallardDuck</node>
+    <node x="613.5625" y="351.0">edu.prahlad.patterns3.intro.ModelDuck</node>
+    <node x="433.75000000000006" y="0.0">edu.prahlad.patterns3.intro.fly.FlyBehavior</node>
+    <node x="162.0" y="351.0">edu.prahlad.patterns3.intro.RubberDuck</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="edu.prahlad.patterns3.intro.ModelDuck" target="edu.prahlad.patterns3.intro.Duck" relationship="GENERALIZATION">
+      <point x="-47.0" y="-27.5" />
+      <point x="637.0625" y="331.0" />
+      <point x="335.51041666666674" y="331.0" />
+      <point x="0.0" y="83.0" />
+    </edge>
+    <edge source="edu.prahlad.patterns3.intro.Duck" target="edu.prahlad.patterns3.intro.quack.QuackBehavior" relationship="TO_ONE">
+      <point x="-90.0" y="-83.0" />
+      <point x="245.51041666666674" y="105.0" />
+      <point x="271.25000000000006" y="105.0" />
+      <point x="-57.0" y="27.5" />
+    </edge>
+    <edge source="edu.prahlad.patterns3.intro.quack.Squeak" target="edu.prahlad.patterns3.intro.quack.QuackBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="925.65625" y="105.0" />
+      <point x="770.0" y="105.0" />
+      <point x="770.0" y="85.0" />
+      <point x="385.25000000000006" y="85.0" />
+      <point x="57.0" y="27.5" />
+    </edge>
+    <edge source="edu.prahlad.patterns3.intro.ModelDuck" target="edu.prahlad.patterns3.intro.fly.FlyNoWay" relationship="CREATE">
+      <point x="47.0" y="-27.5" />
+      <point x="731.0625" y="321.0" />
+      <point x="1074.15625" y="321.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="edu.prahlad.patterns3.intro.quack.Quack" target="edu.prahlad.patterns3.intro.quack.QuackBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="616.65625" y="105.0" />
+      <point x="770.0" y="105.0" />
+      <point x="770.0" y="85.0" />
+      <point x="385.25000000000006" y="85.0" />
+      <point x="57.0" y="27.5" />
+    </edge>
+    <edge source="edu.prahlad.patterns3.intro.MallardDuck" target="edu.prahlad.patterns3.intro.Duck" relationship="GENERALIZATION">
+      <point x="-50.0" y="-27.5" />
+      <point x="1100.4166666666667" y="331.0" />
+      <point x="335.51041666666674" y="331.0" />
+      <point x="0.0" y="83.0" />
+    </edge>
+    <edge source="edu.prahlad.patterns3.intro.RedheadDuck" target="edu.prahlad.patterns3.intro.Duck" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="412.00000000000006" y="331.0" />
+      <point x="335.51041666666674" y="331.0" />
+      <point x="0.0" y="83.0" />
+    </edge>
+    <edge source="edu.prahlad.patterns3.intro.fly.FlyNoWay" target="edu.prahlad.patterns3.intro.fly.FlyBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="1074.15625" y="105.0" />
+      <point x="1256.5" y="105.0" />
+      <point x="1256.5" y="75.0" />
+      <point x="553.75" y="75.0" />
+      <point x="48.0" y="27.5" />
+    </edge>
+    <edge source="edu.prahlad.patterns3.intro.RubberDuck" target="edu.prahlad.patterns3.intro.Duck" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="236.5" y="331.0" />
+      <point x="335.51041666666674" y="331.0" />
+      <point x="0.0" y="83.0" />
+    </edge>
+    <edge source="edu.prahlad.patterns3.intro.MallardDuck" target="edu.prahlad.patterns3.intro.quack.Quack" relationship="CREATE">
+      <point x="0.0" y="-27.5" />
+      <point x="1150.4166666666667" y="311.0" />
+      <point x="616.65625" y="311.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="edu.prahlad.patterns3.intro.fly.FlyRocketPowered" target="edu.prahlad.patterns3.intro.fly.FlyBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="1257.65625" y="105.0" />
+      <point x="1256.5" y="105.0" />
+      <point x="1256.5" y="75.0" />
+      <point x="553.75" y="75.0" />
+      <point x="48.0" y="27.5" />
+    </edge>
+    <edge source="edu.prahlad.patterns3.intro.Duck" target="edu.prahlad.patterns3.intro.quack.QuackBehavior" relationship="DEPENDENCY">
+      <point x="-30.0" y="-83.0" />
+      <point x="305.51041666666674" y="105.0" />
+      <point x="328.25000000000006" y="105.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="edu.prahlad.patterns3.intro.fly.FlyWithWings" target="edu.prahlad.patterns3.intro.fly.FlyBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="1455.65625" y="105.0" />
+      <point x="1256.5" y="105.0" />
+      <point x="1256.5" y="75.0" />
+      <point x="553.75" y="75.0" />
+      <point x="48.0" y="27.5" />
+    </edge>
+    <edge source="edu.prahlad.patterns3.intro.quack.MuteQuack" target="edu.prahlad.patterns3.intro.quack.QuackBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="771.15625" y="105.0" />
+      <point x="770.0" y="105.0" />
+      <point x="770.0" y="85.0" />
+      <point x="385.25000000000006" y="85.0" />
+      <point x="57.0" y="27.5" />
+    </edge>
+    <edge source="edu.prahlad.patterns3.intro.ModelDuck" target="edu.prahlad.patterns3.intro.quack.Quack" relationship="CREATE">
+      <point x="0.0" y="-27.5" />
+      <point x="684.0625" y="311.0" />
+      <point x="616.65625" y="311.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="edu.prahlad.patterns3.intro.Duck" target="edu.prahlad.patterns3.intro.fly.FlyBehavior" relationship="DEPENDENCY">
+      <point x="90.0" y="-83.0" />
+      <point x="425.51041666666674" y="105.0" />
+      <point x="505.75000000000006" y="105.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="edu.prahlad.patterns3.intro.DecoyDuck" target="edu.prahlad.patterns3.intro.Duck" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="71.0" y="331.0" />
+      <point x="335.51041666666674" y="331.0" />
+      <point x="0.0" y="83.0" />
+    </edge>
+    <edge source="edu.prahlad.patterns3.intro.MallardDuck" target="edu.prahlad.patterns3.intro.fly.FlyWithWings" relationship="CREATE">
+      <point x="50.0" y="-27.5" />
+      <point x="1200.4166666666667" y="331.0" />
+      <point x="1455.65625" y="331.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="edu.prahlad.patterns3.intro.Duck" target="edu.prahlad.patterns3.intro.fly.FlyBehavior" relationship="TO_ONE">
+      <point x="30.0" y="-83.0" />
+      <point x="365.51041666666674" y="95.0" />
+      <point x="457.75000000000006" y="95.0" />
+      <point x="-48.0" y="27.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="711.5" y="210.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

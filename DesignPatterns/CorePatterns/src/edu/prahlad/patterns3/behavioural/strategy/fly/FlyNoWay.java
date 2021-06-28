@@ -1,4 +1,4 @@
-package edu.prahlad.patterns3.intro.fly;
+package edu.prahlad.patterns3.behavioural.strategy.fly;
 
 public class FlyNoWay implements FlyBehavior{
     @Override

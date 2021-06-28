@@ -1,4 +1,4 @@
-package edu.prahlad.patterns3.intro.quack;
+package edu.prahlad.patterns3.behavioural.strategy.quack;
 
 public class Quack implements QuackBehavior{
     @Override

@@ -1,6 +1,4 @@
-package edu.prahlad.patterns3.intro.quack;
-
-import edu.prahlad.patterns3.intro.quack.QuackBehavior;
+package edu.prahlad.patterns3.behavioural.strategy.quack;
 
 public class MuteQuack implements QuackBehavior {
     @Override
