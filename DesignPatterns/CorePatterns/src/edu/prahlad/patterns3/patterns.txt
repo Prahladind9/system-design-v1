@@ -5,6 +5,7 @@ Design Principle
     Delegating behaviour during runtime.
 3) Favor composition over inheritance
     HAS-A can be better than IS-A
+4) Shared Vocabulary, makes us think at the pattern level
 
 Behavioural
 
