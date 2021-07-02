@@ -1,1 +1,9 @@
 Observer Pattern
+Publishers (Subject) + Subscribers (Observers) > similar to newspaper or magazine
+
+The Observer Pattern defines a one-to-many relationship
+between a set of objects.
+When the state of one object changes, all of its dependents are notified.
+
+Loosely coupled designs allow us to build flexible OO systems that
+can handle change because they minimize the interdependency between objects

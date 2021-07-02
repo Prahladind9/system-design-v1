@@ -6,6 +6,7 @@ Design Principle
 3) Favor composition over inheritance
     HAS-A can be better than IS-A
 4) Shared Vocabulary, makes us think at the pattern level
+5) Strive for loosely coupled designs between objects that interact.
 
 Behavioural
 
