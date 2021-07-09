@@ -1,2 +1,2 @@
-DecoratorPattern
+Decorator Pattern
 Design Eye for the Inheritance Guy
