@@ -44,3 +44,10 @@ _Microservices Intro_
 7) Configuration Management 
     1) Maintaining Profiles: via application-<profile>.properties
     2) Externalizing configurations
+    
+8) Spring Data: is a collection of libraries that make it easy for us to access, query and manipulate relational and non-relational databases.
+    1) Java ORM: is a programming technique that allows us to store, query and manipulated Java objects stored in relational databases
+    2) JPA: Java Persistence API, is a specification that provides us with a collection of classes and methods to store, query, and manipulated data stores in databases.
+
+9) Exception Handling: @ControllerAdvice and @ExceptionHandler 
+    
