@@ -16,7 +16,7 @@ public class PlaylistRestController {
 
     public PlaylistService service;
 
-    @Qualifier("name")
+    @Qualifier("playlistService")
     @Autowired
     public void setService(PlaylistService service) {
         this.service = service;
