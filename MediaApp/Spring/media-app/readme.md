@@ -49,5 +49,7 @@ _Microservices Intro_
     1) Java ORM: is a programming technique that allows us to store, query and manipulated Java objects stored in relational databases
     2) JPA: Java Persistence API, is a specification that provides us with a collection of classes and methods to store, query, and manipulated data stores in databases.
 
-9) Exception Handling: @ControllerAdvice and @ExceptionHandler 
+9) Exception Handling: @ControllerAdvice and @ExceptionHandler
+
+SwaggerUI: http://localhost:8080/swagger-ui.html#/
     
