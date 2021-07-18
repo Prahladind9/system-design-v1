@@ -1,4 +1,4 @@
-package features;
+package features.v1;
 
 /**
  * Feature #4: Popularity Analysis
