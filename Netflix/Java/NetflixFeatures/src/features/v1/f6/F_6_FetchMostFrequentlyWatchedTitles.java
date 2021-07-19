@@ -43,7 +43,6 @@ public class F_6_FetchMostFrequentlyWatchedTitles {
      *                         LinkedList:
      *                              Delete head when adding a new element: O(1)
      *                              Adding a new element to tail         : O(1)
-     *                              
      *      SpaceComplexity: O(n), where n is the capacity of the cache
      *
      */
