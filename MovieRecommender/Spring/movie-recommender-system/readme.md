@@ -11,3 +11,9 @@ Spring requires information about 3 things to manage objects and dependencies
 1) Beans
 2) Dependencies
 3) Location of beans
+
+Autowiring by Type - @Primary
+Autowiring by Name 
+Autowiring - @Qualifier
+
+@Qualifier takes precedence over the @Primary annotation
