@@ -1,0 +1,19 @@
+HELP.md
+target/
+.mvn
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### IntelliJ IDEA ###
+.idea
+.gradle
+gradlew
+gradlew.bat
+gradle
+*.iws
+*.iml
+*.ipr
+
+### VS Code ###
+.vscode/
