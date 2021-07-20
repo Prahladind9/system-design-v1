@@ -12,8 +12,16 @@ Spring requires information about 3 things to manage objects and dependencies
 2) Dependencies
 3) Location of beans
 
-Autowiring by Type - @Primary
-Autowiring by Name 
-Autowiring - @Qualifier
-
-@Qualifier takes precedence over the @Primary annotation
+Manage Objects and dependencies
+    Autowiring by Type - @Primary
+    Autowiring by Name 
+    Autowiring - @Qualifier
+    Note: @Qualifier takes precedence over the @Primary annotation
+    Constructor Injection (CI) and Setter Injection (SJ)
+        1) SJ is used to avoid the "BeanCurrentlyInCreationException" 
+            raised in case of circular dependency, 
+            because unlike CI where dependencies are injected at the time when the context is loaded,
+            SJ injects dependencies when they are needed.
+        2) CI ensures that all dependencies are injected because an object
+            cannot be constructed until all its dependencies are available.
+            CI ensures immutability as the state of the bean cannot be modified after creation
