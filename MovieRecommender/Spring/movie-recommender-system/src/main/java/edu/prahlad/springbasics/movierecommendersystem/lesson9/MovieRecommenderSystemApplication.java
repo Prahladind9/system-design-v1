@@ -3,8 +3,15 @@ package edu.prahlad.springbasics.movierecommendersystem.lesson9;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.FilterType;
+import org.springframework.stereotype.Component;
 
 @SpringBootApplication
+@ComponentScan(basePackages = {"edu.prahlad.springbasics.movierecommendersystem.lesson10"})
+@ComponentScan(includeFilters = @ComponentScan.Filter(
+        type = FilterType.REGEX,
+        pattern = "edu.prahlad.springbasics.movierecommendersystem.lesson9.*"))
 public class MovieRecommenderSystemApplication {
 
     public static void main(String[] args) {
@@ -31,6 +38,10 @@ public class MovieRecommenderSystemApplication {
         System.out.println("\nContentBasedFilter instances created: "+
                 ContentBasedFilter.getInstances());
         System.out.println("Movie instances created: "+ Movie.getInstances());
+
+
+        System.out.println("ContentBasedFilter bean found = " + appContext.containsBean("contentBasedFilter"));
+        System.out.println("CollaborativeFilter bean found = " + appContext.containsBean("collaborativeFilter"));
     }
 
 }

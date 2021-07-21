@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 //@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE) //with this setup, injection into singleton will make Movie singleton
-@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE) //with this setup, injection into singleton will make Movie singleton and with @Lookup
-//@Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE, proxyMode = ScopedProxyMode.TARGET_CLASS) //with this setup, even after injection into singleton, Movie will be prototype
+//@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE) //with this setup, injection into singleton will make Movie singleton and with @Lookup
+@Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE, proxyMode = ScopedProxyMode.TARGET_CLASS) //with this setup, even after injection into singleton, Movie will be prototype
 public class Movie {
     //for keeping track of instances created
     private static int instances = 0;
