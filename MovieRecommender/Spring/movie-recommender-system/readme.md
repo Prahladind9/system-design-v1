@@ -34,3 +34,10 @@ Singleton - Spring vs Gang of Four
     Singleton design by GoF means one bean per JVM
     In Spring singleton mean one bean per application context,
         for one JVM there may be many application context's
+
+When a prototype bean is injected into a singleton bean, by default,
+it loses its prototype behaviour and acts as a singleton
+Note: 1) Singleton scope minimizes the no of objects created, 
+         so the scope should only be changed where necessary.
+      2) If there are more objects, there will be an impact on the 
+         memory used as well as on garbage collection
