@@ -25,3 +25,12 @@ Manage Objects and dependencies
         2) CI ensures that all dependencies are injected because an object
             cannot be constructed until all its dependencies are available.
             CI ensures immutability as the state of the bean cannot be modified after creation
+
+Scope
+    any application      > Singleton, Prototype
+    only web application > Request, Session, Application, Websocket  
+
+Singleton - Spring vs Gang of Four 
+    Singleton design by GoF means one bean per JVM
+    In Spring singleton mean one bean per application context,
+        for one JVM there may be many application context's
