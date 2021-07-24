@@ -48,3 +48,7 @@ PrototypeBeans
     spring container creates the prototype beans and hands them over when requested.
     thereafter, it is the responsibility of the application to destroy the bean and free up any resources that it has acquired.
     hence, the preDestroy method is not called
+
+Contexts and Dependency Injection Framework
+@Component ~ @Named
+@Autowired ~ @Inject
