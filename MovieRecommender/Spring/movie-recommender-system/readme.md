@@ -41,3 +41,10 @@ Note: 1) Singleton scope minimizes the no of objects created,
          so the scope should only be changed where necessary.
       2) If there are more objects, there will be an impact on the 
          memory used as well as on garbage collection
+
+PostConstruct > is called when all dependencies are resolved
+PreDestroy    > callback method that is executed just before the bean is destroyed 
+PrototypeBeans
+    spring container creates the prototype beans and hands them over when requested.
+    thereafter, it is the responsibility of the application to destroy the bean and free up any resources that it has acquired.
+    hence, the preDestroy method is not called
