@@ -50,5 +50,14 @@ PrototypeBeans
     hence, the preDestroy method is not called
 
 Contexts and Dependency Injection Framework
-@Component ~ @Named
-@Autowired ~ @Inject
+    @Component ~ @Named
+    @Autowired ~ @Inject
+
+Application Configuration
+1) Spring
+    instead of spring-boot-starter
+    spring-core     > provides the fundamental features of Spring framework like dependency injection and inversion of control
+    spring-context  > to use the application Context
+2) XML > all configuration in appContext.xml
+   context:annotation-config, context:component-scan ...
+3) External    
