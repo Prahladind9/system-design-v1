@@ -7,6 +7,19 @@ import java.util.HashMap;
  * Feature #1: Store and Fetch Words
  */
 public class F_1_SearchAndFetchWords {
+
+    /**
+     * Analysis:
+     *                      TimeComplexity      SpaceComplexity
+     *  insertWord              O(l)                O(l)
+     *  searchWord              O(l)                O(1)
+     *  startsWith              O(l)                O(1)
+     *
+     *  where l is the length of the word
+     *                  being inserted / that we need to search in trie
+     *
+     */
+
     public static void main( String args[] ) {
         System.out.println( "Hello World!" );
         String[] keys = {"the", "a", "there", "answer", "any",
