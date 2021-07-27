@@ -15,6 +15,12 @@ public class PlayerDao {
     @Autowired
     JdbcTemplate jdbcTemplate;
 
+    public int updatePlayer(Player player){
+        String sql = "UPDATE PLAYER SET Name = ?, Nationality = ?, Birth_date = ? , Titles = ? WHERE ID = ?";
+        return jdbcTemplate.update(sql, new Object[] {player.getName(), player.getNationality(),
+                new Timestamp(player.getBirthDate().getTime()), player.getTitles(), player.getId()});
+    }
+
     public int insertPlayer(Player player){
         String sql = "INSERT INTO PLAYER (ID, Name, Nationality, Birth_date, Titles) VALUES (?, ?, ?, ?, ?)";
         return jdbcTemplate.update(sql,
