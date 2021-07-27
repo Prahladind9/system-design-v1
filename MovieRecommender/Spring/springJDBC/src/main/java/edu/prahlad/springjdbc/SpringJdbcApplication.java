@@ -30,5 +30,7 @@ public class SpringJdbcApplication implements CommandLineRunner{
         logger.info("Players with Id 4: {}", dao.getPlayerById(4));
         //deleting by Id
         logger.info("Deleting Player with Id 2: {}", dao.deletePlayerById(2));
+        //ddl queries
+        dao.createTournamentTable();
     }
 }
