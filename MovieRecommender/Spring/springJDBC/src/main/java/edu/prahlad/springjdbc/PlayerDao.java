@@ -3,6 +3,7 @@ package edu.prahlad.springjdbc;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
@@ -47,5 +48,24 @@ public class PlayerDao {
     public Player getPlayerById(int id) {
         String sql = "SELECT * FROM PLAYER WHERE ID = ?";
         return jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<Player>(Player.class), new Object[] {id});
+    }
+
+    public List<Player> getPlayerByNationality(String nationality) {
+        String sql = "SELECT * FROM PLAYER WHERE NATIONALITY = ?";
+        return jdbcTemplate.query(sql, new PlayerMapper(), new Object[] {nationality});
+    }
+
+    private static final class PlayerMapper implements RowMapper {
+
+        @Override
+        public Player mapRow(ResultSet resultSet, int rowNum) throws SQLException {
+            Player player = new Player();
+            player.setId(resultSet.getInt("id"));
+            player.setName(resultSet.getString("name"));
+            player.setNationality(resultSet.getString("nationality"));
+            player.setBirthDate(resultSet.getDate("birth_date")); //.getTime("birth_date"));
+            player.setTitles(resultSet.getInt("titles"));
+            return player;
+        }
     }
 }
