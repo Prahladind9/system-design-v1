@@ -1,4 +1,4 @@
-package features.v1;
+package features.v1.f1;
 
 import java.util.Arrays;
 import java.util.HashMap;
