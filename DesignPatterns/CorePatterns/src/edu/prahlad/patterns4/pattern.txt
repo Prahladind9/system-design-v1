@@ -1,0 +1,26 @@
+Why do we need patterns?
+The blunt answer is we don't want to reinvent the wheel!
+
+Telescope Pattern is called an anti-pattern: how NOT to do things!
+
+Example:
+Aircraft(String type)
+Aircraft(String type, String color)
+Aircraft(String type, String color, String prop3)
+Aircraft(String type, String color, String prop3, String prop4)
+
+Suggestions for Object-Oriented Design
+    1) Separate out parts of code that vary or change from those that remain the same.
+    2) Always code to an interface and not against a concrete implementation.
+    3) Encapsulate behaviours as much as possible.
+    4) Favor composition over inheritance.
+       Inheritance can result in explosion of classes and also sometimes
+       the base case is fitted with new functionality that isn't applicable to some of its derived classes.
+    5) Interacting components within a system should be as loosely coupled as possible.
+    6) Ideally, class design should inhibit(restrict) modification and encourage extension.
+    7) Using patterns in your day-to-day work, allows exchanging entire implementation concepts
+       with other developers via shared pattern vocabulary.
+
+    One point to remember, that making one's design flexible and extensible
+    correspondingly increases the complexity and understandability of the code base.
+    One must walk a fine line between the two competing objectives when designing and writing software.
